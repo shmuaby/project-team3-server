@@ -1,4 +1,4 @@
-// import cors, { CorsOptions } from "cors";
+import cors, { CorsOptions } from "cors";
 
 // const whiteList = [
 //   "http://127.0.0.1:3000",
@@ -10,6 +10,6 @@
 //   origin: whiteList,
 // };
 
-// const corsHandler = cors(corsOptions);
+const corsHandler = cors();
 
-// export default corsHandler;
+export default corsHandler;

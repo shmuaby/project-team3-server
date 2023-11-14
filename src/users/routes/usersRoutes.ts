@@ -17,5 +17,6 @@ router.put("/:id", handleEditUser);
 router.delete("/:id", handleDeleteUser);
 router.post("/login", handleLogin);
 router.post("/add-product/:id", handleAddProductToUser);
+router.post("/signup", handleUserRegistration);
 
 export default router;

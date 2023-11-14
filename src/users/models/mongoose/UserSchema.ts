@@ -10,7 +10,7 @@ export const UserSchema = new Schema({
   },
   age: {
     type: Number,
-    required: true,
+    required: false,
   },
   email: {
     type: String,
@@ -25,6 +25,9 @@ export const UserSchema = new Schema({
   address: {
     type: Object,
     required: false,
+  },
+  cart: {
+    type: Object,
   },
 });
 export const User = mongoose.model("user", UserSchema);
