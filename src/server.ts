@@ -3,7 +3,7 @@ import router from "./router/router";
 const app = express();
 import chalk from "chalk";
 import morgan from "./logger/morgan";
-import { generateInitialUsers } from "./initialData/initialDataService";
+// import { generateInitialUsers } from "./initialData/initialDataService";
 import cors from "./cors/cors";
 // import cors from "cors";
 // const corsOptions = {

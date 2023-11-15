@@ -10,24 +10,24 @@ const data = {
   ],
 };
 
-export const generateInitialUsers = async () => {
-  try {
-    const usersInDB = await getUsers();
-    if (Array.isArray(usersInDB) && usersInDB.length) return null;
+// export const generateInitialUsers = async () => {
+//   try {
+//     const usersInDB = await getUsers();
+//     if (Array.isArray(usersInDB) && usersInDB.length) return null;
 
-    const users: UserInterface[] = [];
-    for (const user of data.users) {
-      try {
-        const userInDB = await register(user);
-        users.push(userInDB as UserInterface);
-      } catch (error) {
-        console.log(chalk.redBright("Could not register this user"));
-      }
-    }
+//     const users: UserInterface[] = [];
+//     for (const user of data.users) {
+//       try {
+//         const userInDB = await register(user);
+//         users.push(userInDB as UserInterface);
+//       } catch (error) {
+//         console.log(chalk.redBright("Could not register this user"));
+//       }
+//     }
 
-    Promise.resolve(users);
-  } catch (error) {
-    console.log(chalk.redBright(error));
-    Promise.reject(error);
-  }
-};
+//     Promise.resolve(users);
+//   } catch (error) {
+//     console.log(chalk.redBright(error));
+//     Promise.reject(error);
+//   }
+// };
