@@ -8,5 +8,9 @@ export const CategorySchema = new Schema({
     type: Number,
     required: true,
   },
+  image: {
+    type: String,
+    required: false,
+  },
 });
 export const Category = mongoose.model("category", CategorySchema);

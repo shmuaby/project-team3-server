@@ -3,6 +3,7 @@ import { User } from "../users/models/mongoose/UserSchema";
 import UserInterface from "../users/interfaces/UserInterface";
 import { Product } from "../products/models/mongoose/ProductSchema";
 import { Category } from "../categories/models/mongoose/CategorySchema";
+import CategoryInterface from "../categories/interfaces/CategoryInterface";
 var ObjectId1 = require("mongoose").Types.ObjectId;
 
 export const connectToDatabase = async () => {
