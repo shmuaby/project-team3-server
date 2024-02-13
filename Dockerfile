@@ -1,8 +1,8 @@
 FROM node:18
 
-WORKDIR /src/server
+WORKDIR /src/
 
-COPY packge*.json ./
+COPY . packge*.json ./
 
 RUN npm i
 
@@ -12,4 +12,4 @@ ENV PORT=8181
 
 EXPOSE 8181
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run","dev" ]
